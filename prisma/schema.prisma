@@ -19,7 +19,7 @@ model User {
   lastName      String @map("last_name")
   email         String @unique
   password      String
-  solt          String
+  solt          String?
   profileImgUrl String
 
   createdAt DateTime @default(now())
